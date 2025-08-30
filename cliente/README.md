@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Proyecto Final: Integración de Backend y Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Autor: CShinoDev - Participante del Grupo E
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Este proyecto tiene como objetivo aplicar los conceptos aprendidos en el módulo de desarrollo web, integrando **Frontend (React)** y **Backend (Node.js + Express)**. El CRUD tradicional que hemos trabajado en clase se adapta para manipular datos de un nuevo tipo de entidad (en lugar de usuarios, como se hizo en el curso). En este caso, se utilizaron **animales de pacientes** (o el tipo de información que desees), y se implementaron características adicionales como un **botón de acción para ver información detallada**.
 
-### `npm start`
+## Requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El backend se desarrolla utilizando **Node.js** con el framework **Express** y una base de datos **MongoDB**. En él se maneja la lógica para realizar las operaciones de CRUD (Crear, Leer, Actualizar, Eliminar).
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El frontend se construye con **React** para manejar la interfaz de usuario de manera dinámica. Utiliza las tecnologías de **React Router** para la navegación, **Axios** para la comunicación con la API del backend y **React Bootstrap** para la creación de los componentes de la interfaz.
 
-### `npm run build`
+## Características del Proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **CRUD Completo**:
+   - **Crear**: Agregar nuevos registros (animales, personajes, etc.).
+   - **Leer**: Mostrar los registros en una lista.
+   - **Actualizar**: Modificar registros existentes.
+   - **Eliminar**: Eliminar un registro.
+   
+2. **Visualización Detallada**:
+   - Implementación de un botón "Ver Información" que, al ser presionado, muestra detalles adicionales del registro, como una imagen representativa.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Estilo y Tema Personalizado**:
+   - Se puede elegir un tema para los datos mostrados (ejemplo: animales de pacientes).
+   - La página principal cuenta con un título personalizado y se adapta a la temática seleccionada.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tecnologías Utilizadas
 
-### `npm run eject`
+- **Frontend**:
+  - React
+  - React Router
+  - Axios
+  - React Bootstrap
+  - CSS personalizado
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Backend**:
+  - Node.js
+  - Express
+  - MongoDB
+  - Mongoose
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instrucciones de Instalación
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clona el repositorio del backend:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone <URL-del-repositorio-backend>
+cd <nombre-del-repositorio-backend>
