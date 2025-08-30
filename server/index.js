@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import route from './routes/animalRoutes.js';
+import cors from "cors"
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ const MONGO_URL = process.env.MONGO_URI || "mongodb://localhost:27017/mern";
 
 // Middlewares
 app.use(bodyParser.json());
+app.use(cors());
 
 // Rutas
 app.use("/api", route); 

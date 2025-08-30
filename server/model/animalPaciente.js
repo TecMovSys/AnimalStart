@@ -17,10 +17,6 @@ const animalPacienteSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  imagen: {
-    type: String,
-    required: true,
-  },
   propietario: {
     type: String,
     required: true,
@@ -29,6 +25,13 @@ const animalPacienteSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  estado: {
+    type: String,
+    enum: ['habilitado', 'inhabilitado'],
+    default: 'habilitado', 
+  }
 });
 
-export default mongoose.model("AnimalPaciente", animalPacienteSchema);
+const AnimalPaciente = mongoose.model("AnimalPaciente", animalPacienteSchema);
+
+export default AnimalPaciente;
