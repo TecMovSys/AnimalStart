@@ -53,5 +53,5 @@ El frontend se construye con **React** para manejar la interfaz de usuario de ma
 1. Clona el repositorio del backend:
 
 ```bash
-git clone <URL-del-repositorio-backend>
-cd <nombre-del-repositorio-backend>
+git clone <https://github.com/TecMovSys/AnimalStart.git>
+cd <server>
